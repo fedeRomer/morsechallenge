@@ -2,6 +2,9 @@ package com.meli.morsechallenge.restservice.response;
 
 import org.springframework.http.HttpStatus;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class TranslatorResponse {
 
 	private String text;
@@ -32,7 +35,8 @@ public class TranslatorResponse {
 	public void setCode(Integer code) {
 		this.code = code;
 	}
-
+	@JsonIgnore
+	@JsonProperty(value = "httpStatus")
 	public HttpStatus getHttpStatus() {
 		return httpStatus;
 	}
