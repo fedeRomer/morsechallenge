@@ -70,7 +70,12 @@ public class Translator {
 
 					text = text.concat(" ");
 
-				} else {
+				}else if(stringArray[i].equals(".-.-.-")) {
+					translatorResponse.setText(text);
+					translatorResponse.setCode(HttpStatus.OK.value());
+					translatorResponse.setHttpStatus(HttpStatus.OK);
+					return translatorResponse;
+				}else {
 
 					text = text.concat(getKeyFromValue(String.valueOf(stringArray[i])));
 				}
