@@ -1,8 +1,11 @@
 # Challenge Meli BE- Morse
 
 Se implementa la función translate2human
+
 Se implementan bonus:
+
 Api para traducir texto morse a lenguaje humano y visceversa.
+
 Host de api en cloud público: Heroku
 
 Java 8 y Spring boot 2.4.2
