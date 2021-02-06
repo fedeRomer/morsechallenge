@@ -16,7 +16,7 @@ public class Validator {
 	}
 
 	public Boolean isTrueMorse(String text) {
-		if(text.isEmpty() || text.isBlank()) {
+		if(text.isEmpty() || this.isBlank(text)) {
 			return false;
 		}
 		char dot = '.';
