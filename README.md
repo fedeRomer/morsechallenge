@@ -14,7 +14,7 @@ https://meli-morse-challenge.herokuapp.com/
 
 https://meli-morse-challenge.herokuapp.com/translate/2text
 
-    Request:
+    Request POST:
     {
         "text":"hola meli"
     }
@@ -27,7 +27,7 @@ https://meli-morse-challenge.herokuapp.com/translate/2text
 
 https://meli-morse-challenge.herokuapp.com/translate/2morse
 
-    Request:
+    Request POST:
     {
         "text":".... --- .-.. .-  -- . .-.. .. "
     }
