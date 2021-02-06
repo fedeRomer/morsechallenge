@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Validator {
 
 	public Boolean isValidMessage(String text) {
-		if(text.isEmpty() || text.isBlank()) {
+		if(text.isEmpty() || this.isBlank(text)) {
 			return true;
 		}
 		Pattern pattern = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
